@@ -1,0 +1,62 @@
+/*============ GOOGLE FONTS =============*/
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:wght@400;600&display=swap');
+/*============ VARIABLES CSS =============*/
+:rott {
+    --header-height: 3.5rem;
+/*============ COLORS =============*/
+--first-color: hsl(2, 100%, 61%);
+--first-color-alt: hsl(2, 89%, 53%);
+--title-color: hsl(233, 20%, 15%);
+--text-color: hsl(233, 4%, 35%);
+--body-color: hsl(2, 100%, 97%);
+/*============ Font and Typograpy =============*/
+--body-font: 'Open Sans', sans-serif;
+--second-font: 'Lemon', cursive;
+--biggest-font-size: 2.25rem;
+--normal-font-size: .938rem;
+}
+
+/* Responsive typograpy */
+@media screen and (min-width: 1024px) {
+    :root {
+        --biggest-font-size: 3.5rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+/*============= BASE ==========*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+ img {
+    max-width: 100%;
+    height: auto;
+ }
+
+ /* =========== REUSABLE CSS CLASSES ========*/
+ .container {
+    max-width: 1024px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+ }
+
+ .main {
+    overflow: hidden;
+ }
